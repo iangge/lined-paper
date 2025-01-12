@@ -8,7 +8,13 @@
   border-radius: 50%;
   border: 2px solid #c2dbff;
   display: block;
-  margin: 0 auto 12px; /* Center the image horizontally */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.blog-name {
+  background-color: yellow;
+  display: inline-block;
+  padding: 2px 5px;
 }
 
 /* The sidebar menu */
@@ -19,9 +25,10 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: white; /* Black */
+  background-color: white;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+  border-right: solid red;
   background-image: url(lined-paper-background.png);
 }
 
@@ -29,7 +36,7 @@
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: black;
   display: block;
 }
@@ -55,15 +62,31 @@
   background-color: #a4fff3;
 }
 
+.sidenav a:nth-child(6) {
+  background-color: #e5a4ff;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: blue;
+}
+
+nav a.current {
+  font-weight: bold; /* Makes current link bolded */
 }
 
 /* Style page content */
 .main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+  margin-left: 150px; /* Same as the width of the sidebar */
+  background-color: white; /* White background for the text */
+  padding: 20px; /* Adds space around the text */
+  max-width: 800px; /* Limits the width of the text container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  opacity: 0.8;
+}
+
+body {
+  background-image: url(lined-paper-background.png);
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */

@@ -2,7 +2,7 @@ collections:
   authors:
     output: true # Creates a page for each author
 
-
+blog-name: "Lined Paper"
 
 # Front Matter defaults
 defaults:
