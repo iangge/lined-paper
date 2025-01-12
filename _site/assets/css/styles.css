@@ -2,6 +2,15 @@
   color: green;
 }
 
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #c2dbff;
+  display: block;
+  margin: 0 auto 12px; /* Center the image horizontally */
+}
+
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
