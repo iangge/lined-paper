@@ -21,9 +21,33 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: black;
     display: block;
+    
   }
+
+/* Add unique background colors */
+.sidenav a:nth-child(1) {
+  background-color: #f8b5b0; /* Light red */
+}
+
+.sidenav a:nth-child(2) {
+  background-color: #f8deb0;
+}
+
+.sidenav a:nth-child(3) {
+  background-color: #fafbae;
+}
+
+.sidenav a:nth-child(4) {
+  background-color: #d5ffa4;
+}
+
+.sidenav a:nth-child(5) {
+  background-color: #a4fff3;
+}
+
+
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
