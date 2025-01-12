@@ -1,3 +1,5 @@
+baseurl: "/lined-paper"
+
 collections:
   authors:
     output: true # Creates a page for each author
