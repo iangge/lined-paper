@@ -4,8 +4,8 @@
   link: /categories.html
 - name: Tags
   link: /tags.html
-- name: Archive
-  link: /archive.html  
+- name: Site Archive
+  link: /site-archive.html  
 - name: About
   link: /about.html
 - name: Staff

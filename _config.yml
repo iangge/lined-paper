@@ -4,7 +4,18 @@ collections:
   authors:
     output: true # Creates a page for each author
 
+
 blog-name: "Lined Paper"
+
+jekyll-archives:
+  enabled: 'all'
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 # Front Matter defaults
 defaults:
@@ -18,7 +29,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      
+
   - scope:
       path: ""
     values:
@@ -28,3 +39,5 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-archives
+

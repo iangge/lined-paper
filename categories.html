@@ -3,3 +3,12 @@ layout: default
 title: Categories
 ---
 <h1>Categories</h1>
+
+{% assign sorted_categories = site.categories | keys | sort %}
+{% for category in sorted_categories %}
+    <li><a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}/">
+        <strong>{{category|first}}</strong></a>: 
+        {{ category | last | size }}
+    </li>
+{% endfor %}
+

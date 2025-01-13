@@ -6,10 +6,12 @@ title: Staff
 
 <ul>
   {% for author in site.authors %}
+  <div class="container">
     <li>
       <h2><a href="{{ site.baseurl }}{{ author.url }}">{{ author.name }}</a></h2>
       <h3>{{ author.position }}</h3>
       <p>{{ author.content | markdownify }}</p>
     </li>
+  </div>
   {% endfor %}
 </ul>

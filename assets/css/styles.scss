@@ -29,7 +29,6 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     border-right: solid red;
-    /* background-image: url(lined-paper-background.png);*/
   }
   
   /* The navigation menu links */
@@ -89,7 +88,7 @@
   }
 
 .sidenav, body {
-  background-image: url(lined-paper-background.png);
+  background-image: url('{{ site.baseurl }}/assets/images/lined-paper-background.png');
   background-attachment: fixed; /* Keeps background image fixed while scrolling*/
   }
 

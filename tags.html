@@ -3,3 +3,11 @@ layout: default
 title: Tags
 ---
 <h1>Tags</h1>
+
+{% assign sorted_tags = site.tags | keys | sort %}
+{% for tag in sorted_tags %}
+    <li><a href="{{ site.baseurl }}/tag/{{ tag[0] | slugify }}/">
+        <strong>{{tag|first}}</strong></a>: 
+        {{ tag | last | size }}
+    </li>
+{% endfor %}
