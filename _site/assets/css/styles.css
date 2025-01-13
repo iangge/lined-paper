@@ -2,6 +2,7 @@
   color: green;
 }
 
+/* Profile picture in top left */
 .profile-image {
   width: 100px;
   height: 100px;
@@ -11,6 +12,13 @@
   margin: 0 auto; /* Center the image horizontally */
 }
 
+/* Matches sidebar with body background-image */
+.sidenav, body {
+  background-image: url("/lined-paper/assets/images/lined-paper-background.png");
+  background-attachment: fixed; /* Keeps background image fixed while scrolling*/
+}
+
+/* Highlights blog name */
 .blog-name {
   background-color: yellow;
   display: inline-block;
@@ -40,7 +48,7 @@
   display: block;
 }
 
-/* Add unique background colors */
+/* Add unique background colors for the 6 sidebar links */
 .sidenav a:nth-child(1) {
   background-color: #f8b5b0; /* Light red */
 }
@@ -88,43 +96,59 @@ input[type=text] {
   border: 2px solid #ccc;
 }
 
+input[type=submit] {
+  display: inline-block; /* Allows buttons to size according to content */
+  background-color: #ebe5e5; /* Light gray background */
+  color: #000; /* Black text for contrast */
+  border: 2px solid #aaa; /* Slightly darker border for a box effect */
+}
+
 /* Style page content */
 .main {
   margin-left: 150px; /* Same as the width of the sidebar */
-  width: 75%;
-  background-color: white; /* White background for the text */
+  margin-top: -20px;
   padding: 20px; /* Adds space around the text */
   max-width: 800px; /* Limits the width of the text container */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  width: 75%;
+  background-color: white; /* White background for the body */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   opacity: 0.8;
 }
 
-.sidenav, body {
-  background-image: url("/lined-paper/assets/images/lined-paper-background.png");
-  background-attachment: fixed; /* Keeps background image fixed while scrolling*/
-}
-
-/* Home page that displays resent posts */
-.container {
+/* Container for displaying posts */
+.container, #search-results li {
+  /* Flex box lay out */
   display: flex;
-  max-width: 750px; /* Maximum width to prevent it from growing too large */
-  height: auto;
-  min-height: 100px;
-  list-style-type: none;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 5px 14px;
   flex-direction: column;
+  align-items: flex-start;
+  /* Sizing */
+  max-width: 750px;
+  min-height: 100px;
+  /* Spacing */
+  padding: 5px 14px;
   margin-left: -36px;
   margin-bottom: 15px;
-  flex-shrink: 0;
+  /* List style */
+  list-style-type: none; /* Removes bullet points */
+  /* Borders and appearance */
   border-radius: 4px;
   border: 2px solid #000;
   background-color: #FFF8A7;
 }
 
+/* Style individual search result items */
+#search-results li a {
+  margin: 0; /* Remove all margin from the <a> tag */
+  padding: 0; /* Remove padding, if any */
+}
+
+#search-results li p {
+  margin: 0 0 20px 0; /* Keep only bottom margin */
+  padding: 0; /* Remove padding, if any */
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .sidenav {
     padding-top: 15px;
   }
