@@ -1,0 +1,14 @@
+---
+layout: default
+title: Archive
+---
+
+<h1>Archive</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%B %d, %Y"  }} - {{ post.title }}
+    </li>
+  {% endfor %}
+</ul>
