@@ -8,4 +8,14 @@
   {% for item in site.data.navigation %}
     <a href="{{ site.baseurl }}{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
   {% endfor %}
+
+  <!-- Search Box -->
+
+  <form action="{{ site.baseurl }}/search.html" method="get">
+    <div class="input-container">
+    <input type="text" id="search-box" name="query" placeholder="Search...">
+    <input type="submit" value="🔎">
+    </div>
+  </form>
+
 </nav>

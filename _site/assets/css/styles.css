@@ -74,6 +74,20 @@ nav a.current {
   font-weight: bold; /* Makes current link bolded */
 }
 
+/* Search Box */
+.input-container {
+  margin-top: 2px;
+  display: flex; /* Align elements in a row */
+  justify-content: center; /* Optionally, center the inputs horizontally */
+  align-items: center; /* Align the inputs vertically */
+}
+
+input[type=text] {
+  width: 119px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+}
+
 /* Style page content */
 .main {
   margin-left: 150px; /* Same as the width of the sidebar */
