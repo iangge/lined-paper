@@ -4,8 +4,9 @@ collections:
   authors:
     output: true # Creates a page for each author
 
-
 blog-name: "Lined Paper"
+paginate: 6
+paginate_path: "/page:num/"
 
 jekyll-archives:
   enabled: 'all'
@@ -40,4 +41,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-archives
+  - jekyll-paginate
 

@@ -7,9 +7,16 @@ layout: default
 {{ content }}
 
 <h2>Posts</h2>
+
+
 <ul>
   {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
   {% for post in filtered_posts %}
-    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  <div class="container">
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%B %d, %Y"  }} - {{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  </div> 
   {% endfor %}
 </ul>
