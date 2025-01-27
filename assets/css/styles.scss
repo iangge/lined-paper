@@ -134,7 +134,7 @@
 
     /* Sizing */
     max-width: 750px;
-    min-height: 187px;
+    min-height: 100px;
 
     /* Spacing */
     padding: 5px 14px;
@@ -163,6 +163,7 @@
 
     @media only screen and (max-width: 600px) {
       .container {
-        height: 187px;
+        min-height: 187px;
+        font-size: 14px;
       }
     }
