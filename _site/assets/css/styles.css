@@ -119,7 +119,7 @@ input[type=submit] {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  list-style-type: none; /* Removes bullet points */
+  list-style-type: none;
   min-height: 100px;
   padding: 5px 14px;
   margin-left: -36px;
@@ -157,6 +157,17 @@ input[type=submit] {
   }
   .container h4 a {
     font-size: 18px; /* Ensure <a> links inherit the header's font size */
+  }
+  /* Search Box */
+  .input-container {
+    margin-top: 2px;
+    margin-left: 2px;
+  }
+  input[type=submit] {
+    display: inline-block; /* Allows buttons to size according to content */
+    background-color: #ebe5e5; /* Light gray background */
+    color: #000; /* Black text for contrast */
+    border: 0px;
   }
 }
 
