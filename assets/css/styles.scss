@@ -165,7 +165,16 @@
       .container {
         min-height: 187px;
       }
-      h4, li, p {
-        font-size: 14px;
+    
+      .container li {
+        font-size: 16px; /* Set font size for <li> text */
+      }
+    
+      .container h4 {
+        font-size: 18px; /* Set font size for <h4> headers */
+      }
+    
+      .container h4 a {
+        font-size: 18px; /* Ensure <a> links inherit the header's font size */
       }
     }
