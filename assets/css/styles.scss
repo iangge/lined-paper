@@ -125,30 +125,53 @@
     opacity: 0.8;
   }
 
-  /* Container for displaying posts */
+  // /* Container for displaying posts */
+  // .container, #search-results li {
+  //   /* Flex box lay out */
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-start;
+
+  //   /* Sizing */
+  //   max-width: 750px;
+  //   min-height: 100px;
+
+  //   /* Spacing */
+  //   padding: 5px 14px;
+  //   margin-left: -36px;
+  //   margin-bottom: 15px;    
+
+  //   /* List style */
+  //   list-style-type: none; /* Removes bullet points */
+
+  //   /* Borders and appearance */
+  //   border-radius: 4px;
+  //   border: 2px solid #000;
+  //   background-color: #FFF8A7;
+  // }
+
   .container, #search-results li {
-    /* Flex box lay out */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
 
-    /* Sizing */
-    max-width: 750px;
-    min-height: 100px;
-
-    /* Spacing */
-    padding: 5px 14px;
-    margin-left: -36px;
-    margin-bottom: 15px;    
-
-    /* List style */
     list-style-type: none; /* Removes bullet points */
 
-    /* Borders and appearance */
+    min-height: 100px;
+    padding: 5px 14px;
+    margin-left: -36px;
+    margin-bottom: 15px;  
+
+    box-sizing: border-box;
     border-radius: 4px;
     border: 2px solid #000;
     background-color: #FFF8A7;
   }
+  
+  .container li {
+    flex-grow: 1;
+  }
+  
 
     /* Style individual search result items */
     #search-results li a {
@@ -160,6 +183,9 @@
       margin: 0 0 20px 0; /* Keep only bottom margin */
       padding: 0; /* Remove padding, if any */
     }
+
+
+// For mobile 
 
     @media only screen and (max-width: 600px) {
       .container {
@@ -178,3 +204,4 @@
         font-size: 18px; /* Ensure <a> links inherit the header's font size */
       }
     }
+    

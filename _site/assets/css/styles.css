@@ -115,25 +115,23 @@ input[type=submit] {
   opacity: 0.8;
 }
 
-/* Container for displaying posts */
 .container, #search-results li {
-  /* Flex box lay out */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  /* Sizing */
-  max-width: 750px;
+  align-items: stretch;
+  list-style-type: none; /* Removes bullet points */
   min-height: 100px;
-  /* Spacing */
   padding: 5px 14px;
   margin-left: -36px;
   margin-bottom: 15px;
-  /* List style */
-  list-style-type: none; /* Removes bullet points */
-  /* Borders and appearance */
+  box-sizing: border-box;
   border-radius: 4px;
   border: 2px solid #000;
   background-color: #FFF8A7;
+}
+
+.container li {
+  flex-grow: 1;
 }
 
 /* Style individual search result items */
