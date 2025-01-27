@@ -147,14 +147,4 @@ input[type=submit] {
   padding: 0; /* Remove padding, if any */
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 768px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
 /*# sourceMappingURL=styles.css.map */
