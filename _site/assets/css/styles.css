@@ -169,9 +169,12 @@ input[type=submit] {
     color: #000; /* Black text for contrast */
     border: 0px;
   }
+<<<<<<< HEAD
 }
 .categories_list, .tags_list {
   margin-left: 20px;
+=======
+>>>>>>> 25d247870f780d4be7da476608811371e9e03dbe
 }
 
 /*# sourceMappingURL=styles.css.map */
