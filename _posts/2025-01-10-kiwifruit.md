@@ -2,7 +2,7 @@
 layout: post
 title: "Kiwifruit"
 author: ted
-categories: ["Kiwi", "Fruit"]
+categories: ["Green", "Fruit"]
 tags: "gooseberry"
 ---
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the
